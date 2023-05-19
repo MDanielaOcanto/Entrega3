@@ -8,16 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@500&family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./mediaqueries.css">
 </head>
 <body>
     <header>
-        <img src="./Logo.png.png" alt="Logo Projects" width="140px" height="140px" class="logo">
-        <div class="tituloysub">
-            <p class="titulo">PROJECTS</p>
-            <p class="subtitulo">Programación Web</p>
+        <div class="marca">
+                <img src="./assets/Logo.png.png" alt="Logo Projects">
+            <div class="marca-nombre-slog">
+                <p class="marca-nombre">PROJECTS</p>
+                <p class="marca-slogan">Programación Web</p>
+            </div>
         </div> 
 
         <nav class="navbar">
+            <label for="Menu-toggle" class="Menu-label">
+                <img src="./menu-icono.png" alt="Icono-Menu">
+            </label>
+            <input type="checkbox" id="Menu-toggle">
+
             <ul class="navbar-list">
                 <li><a href="#">INICIO</a></li>
                 <li><a href="#">SERVICIOS</a></li>
@@ -31,22 +39,70 @@
         <section id="hero">
             <div class="hero-info">
                 <h1>Proyects</h1>
-                <h2>Programación Web</h2>
-                <p>En <span> Projects </span> nos encargamos de crear páginas web y sitios en Internet; a través de líneas de código
-                    y utilizando diferentes lenguajes de programación, para el desarrollo creativo de las mismas.</p>
-                    <a href="#">Mas información</a>
+                <h2>Programación Web</h2> <br>
+                <p> En <span> Projects </span> nos encargamos de crear páginas web y sitios en Internet; a través de líneas de código
+                y utilizando diferentes lenguajes de programación, para el desarrollo creativo de las mismas.</p> <br>
+                <a href="#"> Mas información </a>
             </div>
-            <div class="hero-img">
-                <img src="https://th.bing.com/th/id/OIP.Fgm4CjGIyUolhOHJYLBK6QHaGK?pid=ImgDet&w=550&h=458&rs=1" alt="Imagen Web" height="230px" width="310px">
+
+            <div class="hero-card"> 
+                <img src="https://th.bing.com/th/id/OIP.Fgm4CjGIyUolhOHJYLBK6QHaGK?pid=ImgDet&w=550&h=458&rs=1" alt="Imagen Web">
             </div>
         </section>
+
         <section id="about">
             <div class="about-info">
-                <p> Desarrollamos tanto el fronted y backend, creando las funcionalidades especificas requeridas. <br>
-                También supervisamos y mejoramos el rendimiento y capacidad de páginas webs ya creadas. <br>
-                Contamos con conocimientos sólidos y técnicos, capacidad de análisis y habilidad resolutiva de imprevistos.</p>
+            <p> Desarrollamos tanto el fronted como el backend, creando las funcionalidades especificas requeridas.<br> <br>
+            También supervisamos y mejoramos el rendimiento y capacidad de páginas webs ya creadas.<br> <br>
+            Contamos con conocimientos sólidos y técnicos, capacidad de análisis y habilidad resolutiva de imprevistos.</p>
+            </div>
+        </section>
+        
+        <section id="info">
+            <h2>Nuestra metodología de trabajo</h2>
+            <div class="info-cards-container">
+                <div class="info-card">
+                    <img src="./assets/1-removebg-preview.png" alt="Imagen de comunicación con el cliente"/>
+                    <h3> 1. Necesidades del cliente</h3>
+                    <p>En el primer contacto, escuchamos lo que el cliente quiere y necesita
+                    de una página web y damos a conocer el general de lo que hacemos y podemos ofrecer.</p>
+                </div>
+                
+                <div class="info-card">
+                    <img src="./assets/2.png" alt="Imagen generación de ideas"/>
+                    <h3> 2. Ideas y propuestas</h3>
+                    <p>Segundo contacto, exponemos al cliente nuestras ideas de desarrollo para su sitio web;
+                    funcionalidades y diseño, teniendo en cuenta lo planteado por el cliente
+                    en el contacto anterior.</p>
+                </div>
+
+                <div class="info-card">
+                    <img src="./assets/3.png" alt="Imagen de finalización del proyecto web"/>
+                    <h3> 3. Finalización del proyecto</h3>
+                    <p>Último contacto con nuestro cliente, presentamos la página web finalizada.</p>
+                </div>
             </div>
         </section>
     </main>
+
+    <footer>
+        <section id="footer">
+            <div class="footer-marca">
+                <img src="./assets/Logo.png.png" alt="Logo de Projects">
+                <div class="footer-marca-titulo">
+                    <h4>Projects</h4>
+                    <h5>Programación Web</h5>
+                </div>
+            </div>
+
+            <div>
+                <ul class="footer-links">
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
